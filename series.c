@@ -2,22 +2,23 @@
 #include<math.h>
 int main()
 {
-    int a,i,k=0,k1=0,c,d;
+    int a,i,k=1,c,b,k1=0,f,g=1,d=0;
     scanf("%d",&a);
-    printf("%d ",a*0);
-    for(i=1;i<a;i++)
+    for(i=1;i<=a+1;i++)
     {
         if(i%2==0)
         {
-            c=pow(2,k);
-            printf("%d ",c);
+            c=pow(3,k);
+            b=c-1;
+            printf("%d ",b);
             k++;
         }
-        else if(i%2!=0)
+        else
         {
-            d=pow(3,k1);
-            printf("%d ",d);
-            k1++;
+           f=pow(2,k1);
+           d=f+d;
+           printf("%d ",d);
+           k1++;
         }
     }
 }
