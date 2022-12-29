@@ -1,10 +1,9 @@
 #include<stdio.h>
 int main()
 {
-    int a,i,c,k1=1,k=1;
+    int a,i,c,k1=0,k=0;
     scanf("%d",&a);
-    printf("0 0 ");
-    for(i=1;i<a;i++)
+    for(i=1;i<=a+1;i++)
     {
         if(i%2==0)
         {
