@@ -1,7 +1,7 @@
 #include<stdio.h>
 int sort(int *a,int n)
 {
-    int i,j,t,q=0;
+    int i,j,t;
     for(i=1;i<n;i++)
     {
         t=a[i];
@@ -22,17 +22,23 @@ int sort(int *a,int n)
             a[0]=t;
         }
     }
-    	
-        if(n%2==0)
+    for(i=0;i<n;i++)
+    {
+    	int l=0,h=n-1,ag,q;
+        ag=(l+h)/2;
+        if(ag%2==0)
         {
             q=(n/2)+1;
             printf("%d",a[q-1]);
+            break;
         }
         else
         {
             q=(n+1)/2;
-            printf("%d",a[q-1]);
+            printf("%d",a[q]);
+            break;
         }
+	}
 }
 int main()
 {
