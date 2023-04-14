@@ -23,5 +23,4 @@ int main()
     k=b*2;
     ans=c+k;
     printf("%d",ans);
-    
 }
