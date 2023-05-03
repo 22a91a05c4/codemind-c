@@ -7,10 +7,10 @@ int main()
     {
         if(a%i==0)
         {
-           s=s+i; 
+            s=s+i;
         }
     }
-    if(a==s)
+    if(s==a)
     {
         printf("True");
     }
