@@ -1,0 +1,30 @@
+#include<stdio.h>
+int main()
+{
+    int a[100],i,n,c=0,avg,fl=0;
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    for(i=0;i<n;i++)
+    {
+        c=c+a[i];
+    }
+    avg=c/n;
+    for(i=0;i<n;i++)
+    {
+        if(avg==a[i])
+        {
+            fl++;
+        }
+    }
+    if(fl==0)
+    {
+        printf("False");
+    }
+    else
+    {
+        printf("True");
+    }
+}
