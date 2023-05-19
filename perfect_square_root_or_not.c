@@ -1,11 +1,12 @@
 #include<stdio.h>
 int main()
 {
-    int a,s,c=0;
+    int a,c=0,i,s;
     scanf("%d",&a);
-    for(s=1;s<=a;s++)
+    for(i=1;i<=a;i++)
     {
-        if(s*s==a)
+        s=i*i;
+        if(s==a)
         {
             c++;
         }
