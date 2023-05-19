@@ -1,14 +1,14 @@
 #include<stdio.h>
 int main()
 {
-    int a,i;
-    scanf("%d",&a);
-    for(i=0;i<a;i++)
+    int n,i;
+    scanf("%d",&n);
+    for(i=1;i<=n;i++)
     {
-        int m,n,s;
-        scanf("%d%d",&m,&n);
-        s=m+n;
+        int a,b,c;
+        scanf("%d%d",&a,&b);
+        c=a+b;
         printf("%d
-",s);
+",c);
     }
 }
