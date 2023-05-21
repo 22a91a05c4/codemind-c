@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-    int a[100],i,n,avg,s=0,c=0;
+    int a[100],i,n,c=0,s=0,avg;
     scanf("%d",&n);
     for(i=0;i<n;i++)
     {
@@ -9,15 +9,15 @@ int main()
     }
     for(i=0;i<n;i++)
     {
-        s=s+a[i];
+        c=c+a[i];
     }
-    avg=(s)/n;
+    avg=c/n;
     for(i=0;i<n;i++)
     {
-        if(avg<=a[i])
+        if(a[i]>=avg)
         {
-            c++;
+            s++;
         }
     }
-    printf("%d",c);
+    printf("%d",s);
 }
