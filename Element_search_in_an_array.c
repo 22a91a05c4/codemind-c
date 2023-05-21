@@ -1,12 +1,13 @@
 #include<stdio.h>
 int main()
 {
-    int a[100],i,n,k,c=0;
+    int a[100],i,n;
     scanf("%d",&n);
     for(i=0;i<n;i++)
     {
         scanf("%d",&a[i]);
     }
+    int k,c=0;
     scanf("%d",&k);
     for(i=0;i<n;i++)
     {
@@ -15,12 +16,12 @@ int main()
             c++;
         }
     }
-    if(c==0)
-    {
-        printf("False");
-    }
-    else
+    if(c>=1)
     {
         printf("True");
     }
+    else
+        {
+            printf("False");
+        }
 }
