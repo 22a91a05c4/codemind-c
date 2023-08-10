@@ -2,17 +2,18 @@
 #include<math.h>
 int main()
 {
-    int n,a[100],i,j,s;
+    int a[100],i,n,s=0,k,p,m;
     scanf("%d",&n);
     for(i=0;i<n;i++)
     {
         scanf("%d",&a[i]);
     }
-    j=n-1;
     for(i=0;i<n;i++)
     {
-        s=s+(a[i]*(pow(2,j)));
-        j--;
+        m=(n-i-1);
+        k=pow(2,m);
+        p=k*a[i];
+        s=s+p;
     }
     printf("%d",s);
 }
