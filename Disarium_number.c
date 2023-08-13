@@ -2,18 +2,23 @@
 #include<math.h>
 int main()
 {
-    int a,r,m,p,s=0,t;
+    int a,r,q,s=0,t,c=0,k=0;
     scanf("%d",&a);
     t=a;
-    while(a!=0)
+    while(a)
     {
-        m=log10(a)+1;
         r=a%10;
-        p=pow(r,m);
-        s=s+p;
+        s=s*10+r;
         a=a/10;
     }
-    if(s==t)
+    while(s)
+    {
+        q=s%10;
+        c++;
+        k=k+(pow(q,c));
+        s=s/10;
+    }
+    if(k==t)
     {
         printf("True");
     }
