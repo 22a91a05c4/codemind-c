@@ -1,8 +1,7 @@
 #include<stdio.h>
 int main()
 {
-    int a[100],n,i,c=0;
-    int p,q;
+    int n,a[100],p,q,i,c=0;
     scanf("%d",&n);
     for(i=0;i<n;i++)
     {
@@ -17,7 +16,7 @@ int main()
             c++;
         }
     }
-    if(c<1)
+    if(c==0)
     {
         printf("-1");
     }
