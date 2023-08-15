@@ -2,7 +2,6 @@
 int main()
 {
     int n,a[100],i,s=0,c=0;
-    int x=n/2;
     scanf("%d",&n);
     for(i=0;i<n;i++)
     {
