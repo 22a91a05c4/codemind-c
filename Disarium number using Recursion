@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<math.h>
+void disa(int a,int m,int t,int s)
+{
+    int r,k;
+    while(a)
+    {
+        r=a%10;
+        k=pow(r,m);
+        s=s+k;
+        a=a/10;
+        return disa(a,m-1,t,s);
+    }
+    if(s==t)
+    {
+        printf("True");
+    }
+    else
+    {
+        printf("False");
+    }
+}
+int main()
+{
+    int a,t;
+    scanf("%d",&a);
+    int m=log10(a)+1;
+    t=a;
+    disa(a,m,t,0);
+}
