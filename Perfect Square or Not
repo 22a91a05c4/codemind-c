@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    float a,s,q;
+    scanf("%f",&a);
+    s=sqrt(a);
+    q=s*s;
+    if(q==a)
+    {
+        printf("True");
+    }
+    else
+    {
+        printf("False");
+    }
+}
