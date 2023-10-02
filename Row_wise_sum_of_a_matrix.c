@@ -1,22 +1,22 @@
 #include<stdio.h>
 int main()
 {
-    int a,b,i,j,s=0,n[10][10];
-    scanf("%d%d",&a,&b);
-    for(i=0;i<a;i++)
+    int r,c,i,j,a[100][100];
+    scanf("%d%d",&r,&c);
+    for(i=0;i<r;i++)
     {
-        for(j=0;j<b;j++)
+        for(j=0;j<c;j++)
         {
-            scanf("%d",&n[i][j]);
+            scanf("%d",&a[i][j]);
         }
     }
-    for(i=0;i<a;i++)
+    for(i=0;i<r;i++)
     {
-        for(j=0;j<b;j++)
+        int s=0;
+        for(j=0;j<c;j++)
         {
-            s=s+n[i][j];
+            s=s+a[i][j];
         }
         printf("%d ",s);
-        s=0;
     }
 }
